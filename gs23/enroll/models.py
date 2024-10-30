@@ -8,5 +8,3 @@ class Student(models.Model):
     stupass=models.CharField(max_length=100)
     comment=models.CharField(max_length=40,default="not available")
 
-    def __str__(self):
-        return str(self.stuid)
