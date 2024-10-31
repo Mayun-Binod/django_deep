@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+</head>
+<body>
+    <form action="" method="GET">
+            {{form}}
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+<form action="" method="GET">
+    {{form.as_p}}
+    <input type="submit" value="Submit">
+</form>
+<hr>
+<form action="" method="GET">
+    <ul>
+        {{form.as_ul}}
+    </ul>
+    <input type="submit" value="Submit">
+</form>
+<hr>
+<form action="" method="GET">
+    <table>
+        {{form.as_table}}
+    </table>
+    <input type="submit" value="Submit">
+</form>
+<hr>
+<form action="" method="GET">
+    {{form.name}}
+    {{form.email}}
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
