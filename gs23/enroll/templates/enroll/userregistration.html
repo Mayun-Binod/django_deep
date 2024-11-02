@@ -6,7 +6,27 @@
     <title>User Registration</title>
 </head>
 <body>
-    <form action="" method="GET">
+
+
+<form action="" method="get">
+    <div><label for="id_name">Name:</label>
+    <input type="text" name="name" id="id_name" required>
+</div>
+
+<div><label for="{{form.name.id_for_label}}">Name:</label>
+    {% comment %} <input type="text" name="name" id="id_name" required> {% endcomment %}
+    {{form.name.label_tag}}
+    {{form.name.label}}
+    {{form.name.html_name}}
+    {{form.name.help_text}}
+    {{form.name.field.required}}
+</div>
+
+</form>
+
+</body>
+</html>
+    {% comment %} <!-- <form action="" method="GET">
             {{form}}
         <input type="submit" value="Submit">
     </form>
@@ -34,7 +54,4 @@
     {{form.name}}
     {{form.email}}
     <input type="submit" value="Submit">
-</form>
-
-</body>
-</html>
+</form> --> {% endcomment %}
